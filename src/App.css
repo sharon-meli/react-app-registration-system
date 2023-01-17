@@ -2,13 +2,7 @@
 .App {
   text-align: center;
 }
-.logo{
-  width: 150px;
-  height: 150px;
-  padding-left: 30px;
-  padding-right: 10px;
-  
-} 
+
 
 .App-logo {
   height: 40vmin;
@@ -44,3 +38,5 @@
     transform: rotate(360deg);
   }
 }
+
+

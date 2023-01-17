@@ -1,0 +1,49 @@
+{
+    "patientDetails": [
+      {
+        "name": "Sharon Shillamy",
+        "gender": "Female",
+        "id": "1",
+        "age": "30",
+        "residence": "Nairobi",
+        "date": "10/14/2022",
+        "weight": "50"
+      },
+      {
+        "name": "Steve Gilbert",
+        "gender": "Male",
+        "id": "2",
+        "age": "24",
+        "residence": "Iten",
+        "date": "12/13/2022",
+        "weight": "60"
+      },
+      {
+        "name": "Sky Johns",
+        "gender": "Male",
+        "id": "3",
+        "age": "54",
+        "residence": "Mara",
+        "date": "12/25/2022",
+        "weight": "75"
+      },
+      {
+        "id": "4",
+        "name": "Kate Esther",
+        "gender": "Female",
+        "age": "18",
+        "residence": "Kisumu",
+        "date": "2022-12-17",
+        "weight": "40"
+      },
+      {
+        "id": "5",
+        "name": "Felix Naftali",
+        "gender": "male",
+        "age": "45",
+        "residence": "Nakuru",
+        "date": "2022-12-16",
+        "weight": "65"
+      }
+    ]
+  }
