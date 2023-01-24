@@ -1,7 +1,7 @@
 function Table({displayData}){
     return(
-        <div>
-<div>
+        
+<div className="displayTable">
     <table className="table">
       <thead>
         <tr>
@@ -12,6 +12,7 @@ function Table({displayData}){
           <th scope="col">Residence</th>
           <th scope="col">Date</th>
           <th scope="col">Weight</th>
+          <th scope="col"></th>
         </tr>
       </thead>
       <tbody>
@@ -19,7 +20,6 @@ function Table({displayData}){
       </tbody>
     </table>
     </div>
-        </div>
     )
 }
 export default Table;

@@ -1,5 +1,5 @@
 
-import image from "../image/image.jpeg"
+import image from "../image/image.png"
 import "./style.css"
 
 function Logo(){

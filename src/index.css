@@ -29,7 +29,6 @@ code {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 5s linear infinite;
-    display: inline-block;
     font-size: 60px;
 }
 @keyframes textclip {

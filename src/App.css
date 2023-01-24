@@ -40,3 +40,49 @@
 }
 
 
+@media (orientation: portrait) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form{
+  width: 100%;
+  }
+  .table{
+    flex-grow: 2;
+  }
+  .displayTable{
+    flex-grow: 2;
+    padding-left: 20px;
+  }
+}
+ @media (orientation: landscape) {
+  .main{
+    display: flex;
+  }
+  
+  .form{
+  width: 30%;
+  }
+  .table{
+    flex-grow: 2;
+  }
+  .displayTable{
+    flex-grow: 2;
+    padding-left: 20px;
+  }
+ } 
+.delete-button button {
+  background-color: red;
+  border: solid 1px
+}
+.editing{
+  font-weight: bolder;
+  color:azure;
+  cursor: pointer;
+  background-color: blue !important;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
