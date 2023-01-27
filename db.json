@@ -3,10 +3,10 @@
     {
       "name": "Edd",
       "gender": "male",
-      "age": "12",
+      "age": "13",
       "residence": "Nakuru",
       "date": "2023-01-24",
-      "weight": "41",
+      "weight": "44",
       "id": 5
     },
     {
@@ -19,13 +19,22 @@
       "id": 6
     },
     {
-      "name": "sharon chepkirui",
+      "name": "vivian dande",
       "gender": "female",
-      "age": "23",
-      "residence": "nairobi",
-      "date": "2023-01-27",
-      "weight": "55",
-      "id": 7
+      "age": "56",
+      "residence": "Nakuru",
+      "date": "2023-01-26",
+      "weight": "70",
+      "id": 8
+    },
+    {
+      "name": "winny danvries",
+      "gender": "female",
+      "age": "21",
+      "residence": "kiambu",
+      "date": "2023-01-26",
+      "weight": "64",
+      "id": 9
     }
   ]
 }

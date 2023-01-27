@@ -2,10 +2,17 @@ import React,{useState, useEffect} from 'react';
 import './App.css';
 import Form from './components/Form.js';
 import Header from './components/Header.js';
-import Table from './components/Table.js'
+import Table from './components/Table.js';
+import NavBar from './components/NavBar';
+import Search from './components/Search';
+import { Routes,Route } from 'react-router-dom';
+import About from './components/About';
+import Contact from './components/Contact';
+
 
 function App() {
   const [table,setTable] = useState([])
+  const [search,setSearch] = useState("")
   const [formState,setFormState] = useState("post")
   const [patient,setPatient] = useState({
     id:0,
@@ -16,12 +23,16 @@ function App() {
     date:"",
     weight:"",
   })
+  const [showForm,setShowForm]=useState(false)
 
   useEffect( ()=> {
-    fetch("http://localhost:3000/patientDetails")
+    fetch("http://localhost:3000/patientDetails?q="+search)
     .then(resp => resp.json())
     .then(data => setTable(data))
-  },[])
+  },[search])
+  function handleSearch(e){
+    setSearch(e.target.value)
+  }
 
   function handlePatientData(key, value) {
     setPatient({...patient,[key]: value})
@@ -90,13 +101,23 @@ return(
 })
   return (
     <div className="App">
-      
       <Header/>
-      <div className='main'>
-      <Form formState={formState} patient={patient} handlePatientData={handlePatientData}  addPatient={addPatient}/>
-      <Table displayData={displayData}/>
+      <NavBar/>
+      
+      <Routes>
+          <Route path="/" element={
+          <>
+          <Search handleSearch={handleSearch}showForm={showForm}setShowForm={setShowForm}/>
+          <div className='main'>
+          {showForm?<Form formState={formState} patient={patient} handlePatientData={handlePatientData}  addPatient={addPatient}/>:null}
+          <Table displayData={displayData}/>
+          </div>
+          </>
+          }/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+      </Routes>
       </div>
-    </div>
   );
 }
 
